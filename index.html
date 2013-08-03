@@ -97,6 +97,11 @@
       .footer a {
         color: #ccccff;
       }
+        /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ div.addthis_toolbox {
+      width:180px;
+      margin: 0 auto;
+      }
     </style>
   </head>
   <body>
@@ -150,7 +155,7 @@
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-	  <div class="row-fluid">
+	      <div class="row-fluid">
           <div class="span8 offset2">
             <div class="statistics">
               <div class="span4">
@@ -173,8 +178,8 @@
               </div>
             </div>
           </div>
-	 </div>
-	  <div class="row-fluid">
+	     </div>
+	            <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -183,22 +188,28 @@
               <div class="bar bar-warning" style="width: 45%;"></div>
             </div>
           </div>
-	  </div>
-	  <div class="row-fluid">
+	      </div>
+		            <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Order Now</button>
           </div>
-	  </div>
-	  <div class="row-fluid">
+	      </div>
+			      <div class="row-fluid">
           <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	        <!-- AddThis Button BEGIN -->
+		    <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		            <a class="addthis_button_preferred_1"></a>
+			          <a class="addthis_button_preferred_2"></a>
+				        <a class="addthis_button_compact"></a>
+					      <a class="addthis_counter addthis_bubble_style"></a>
+					          </div>
+		        <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51fd7f0a0d2cbfea"></script>
+			        <!-- AddThis Button END -->
           </div>
-	  </div>
+	      </div>
         </div>
 	</div>
    
@@ -213,10 +224,10 @@
         <div class="span5 copy">
           <p>
             This is where I am going to write very persuasive copy that will 
-	    make everyone who views the page want to fund my project.  I am 
-	    still trying to decide on a final project, so right now this is a
-	    placeholder.  Check back frequently to ensure you don't miss this 
-	    once in a lifetime opportunity. 
+	            make everyone who views the page want to fund my project.  I am 
+	            still trying to decide on a final project, so right now this is a
+	            placeholder.  Check back frequently to ensure you don't miss this 
+	            once in a lifetime opportunity. 
           </p>
         </div>
       </div>
@@ -225,10 +236,10 @@
         <div class="span5 offset1 copy copy-right">
           <p>
             This spot will contain even more copy to convince you to fund 
-	    my project immediately.  If you were somehow able to resist earlier
-	    I will definitely change your mind with this paragraph.  My project
-	    will solve all of your problems, please donate now. 
-	  </p>
+	            my project immediately.  If you were somehow able to resist earlier
+	            I will definitely change your mind with this paragraph.  My project
+	            will solve all of your problems, please donate now. 
+	          </p>
         </div>
         <div class="span5 asset">
           <img class="img-polaroid" alt="Anthony Zazo SEO" src="http://www.anthonyzazo.com/wp-content/uploads/2012/01/Dynamic-Homepage-Image.png">
@@ -278,7 +289,7 @@
       <div class="row-fluid footer">
         <div class="span12">
           <p>This site was built by<a href="http://www.anthonyzazo.com"> Anthony Zazo</a> for Startup Engineering at<a href="http://www.stanford.edu"> Stanford University</a> courtesty of<a href="http://www.coursera.com"> Coursera</a>.
-	  </p>
+	          </p>
         </div>
       </div>
     </div>
